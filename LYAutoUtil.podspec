@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESCRIPTION
-                    Personal tool.
+                    Personal tool. I want to more time to do anther thing.
                    DESCRIPTION
 
   s.homepage     = "https://github.com/lynnx4869/LYAutoUtil"
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "lynnx4869" => "lynnx4869@gmail.com" }
-  s.social_media_url   = "https://twitter.com/lynnx4869"
+  # s.social_media_url   = "https://twitter.com/lynnx4869"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

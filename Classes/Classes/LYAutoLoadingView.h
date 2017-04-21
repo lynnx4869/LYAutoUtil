@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <POP.h>
+#import <pop/POP.h>
 
 @interface LYAutoLoadingView : UIView
 
