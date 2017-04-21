@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-bD-Nqb">
+                                <rect key="frame" x="137" y="80" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.56470588235294117" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7JT-dr-T7X"/>
+                                    <constraint firstAttribute="width" constant="100" id="i0I-zf-579"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Alert">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Jo-pa-dKW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omf-PF-FwS">
+                                <rect key="frame" x="137" y="140" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.56470588235294117" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="J1z-Yb-dlr"/>
+                                    <constraint firstAttribute="width" constant="100" id="fLo-Cz-Qqc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sheet">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQy-yZ-2d5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djy-Bw-pcC">
+                                <rect key="frame" x="137" y="260" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.56470588235294117" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JaM-bX-OxT"/>
+                                    <constraint firstAttribute="width" constant="100" id="mXt-3b-EoR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="datepicker">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDatePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drf-OB-YOh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMi-V6-TJK">
+                                <rect key="frame" x="137" y="200" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.56470588235294117" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qtj-vQ-4Up"/>
+                                    <constraint firstAttribute="width" constant="100" id="j1g-Z9-mmp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8XP-Em-LGJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSL-fY-lK7">
+                                <rect key="frame" x="137" y="320" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DF6-Yn-eI7"/>
+                                    <constraint firstAttribute="width" constant="100" id="EGO-VH-c8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="loading">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLoading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ol-94-7Fu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WMi-V6-TJK" firstAttribute="top" secondItem="Omf-PF-FwS" secondAttribute="bottom" constant="20" id="3oQ-GH-Ow6"/>
+                            <constraint firstItem="jeQ-bD-Nqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6D2-DO-W3y"/>
+                            <constraint firstItem="Djy-Bw-pcC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IjH-O3-vIP"/>
+                            <constraint firstItem="jeQ-bD-Nqb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Jdf-xs-wVy"/>
+                            <constraint firstItem="Omf-PF-FwS" firstAttribute="top" secondItem="jeQ-bD-Nqb" secondAttribute="bottom" constant="20" id="RH8-Z6-QHL"/>
+                            <constraint firstItem="fSL-fY-lK7" firstAttribute="top" secondItem="Djy-Bw-pcC" secondAttribute="bottom" constant="20" id="T8E-ai-BHN"/>
+                            <constraint firstItem="fSL-fY-lK7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VxV-0v-poQ"/>
+                            <constraint firstItem="Omf-PF-FwS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iO9-rE-nir"/>
+                            <constraint firstItem="WMi-V6-TJK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBs-Ag-QGD"/>
+                            <constraint firstItem="Djy-Bw-pcC" firstAttribute="top" secondItem="WMi-V6-TJK" secondAttribute="bottom" constant="20" id="xsN-Dp-Ta1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
