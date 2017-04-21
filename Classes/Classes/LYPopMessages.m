@@ -8,7 +8,7 @@
 
 #import "LYPopMessages.h"
 #import "LYPopMessagesView.h"
-#import <POP.h>
+#import <pop/POP.h>
 #import "LYAutoUtil_Consts.h"
 
 @implementation LYPopMessages
