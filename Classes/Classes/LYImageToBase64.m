@@ -21,13 +21,45 @@
 }
 
 + (UIImage *)compressImage:(UIImage *)image {
-    CGSize size = CGSizeMake(400, 400*image.size.height/image.size.width);
+    CGFloat width = image.size.width;
+    CGFloat height = image.size.height;
+    
+    CGFloat newWidth = width;
+    CGFloat newHeight = height;
+    
+    if (width <= 1280 && height <= 1280) {
+        newWidth = width;
+        newHeight = height;
+    } else if ((width > 1280 || height > 1280) && width/height <= 2.0) {
+        if (width > height) {
+            newWidth = 1280;
+            newHeight = 1280 * height / width;
+        } else {
+            newWidth = 1280 * width / height;
+            newHeight = 1280;
+        }
+    } else if ((width > 1280 || height > 1280) && width/height > 2.0 && (width < 1280 || height < 1280)) {
+        newWidth = width;
+        newHeight = height;
+    } else if (width > 1280 && height > 1280 && width/height > 2.0) {
+        if (width > height) {
+            newWidth = 1280 * width / height;
+            newHeight = 1280;
+        } else {
+            newWidth = 1280;
+            newHeight = 1280 * height / width;
+        }
+    }
+    
+    CGSize size = CGSizeMake(newWidth, newHeight);
     UIGraphicsBeginImageContext(size);
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return scaledImage;
+    NSData *newData = UIImageJPEGRepresentation(scaledImage, 0.5);
+    
+    return [UIImage imageWithData:newData];
 }
 
 @end
